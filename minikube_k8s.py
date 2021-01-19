@@ -70,7 +70,6 @@ status = gso('minikube start --driver=none --kubernetes-version=v1.20.0 --memory
 time()
 print('minikube started' if status[0]==0 else 'failed to start minikube')
 
-
 '''
 kubectl installation
 
