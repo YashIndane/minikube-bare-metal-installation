@@ -14,6 +14,11 @@ To run
 python3 minikube_k8s.py
 ```
 
+On successfull run
+
+![](images/v1.png)
+
+
 
 
 
