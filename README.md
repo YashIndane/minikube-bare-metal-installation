@@ -20,6 +20,11 @@ On successfull run
 
 ![](images/v1.png)
 
+To check status after setup run this -
+```
+minikube status
+```
+
 
 
 
