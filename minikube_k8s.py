@@ -29,12 +29,14 @@ status = gso(f'echo "gpgcheck=0" >> {repo_name}')
 
 time()
 print('yum repos configured!' if status[0]==0 else 'failed to configure yum repos!')
+if status[0]!=0 : exit()
 
 #installing docker community edition
 status = gso('yum install docker-ce --nobest -y')
 
 time()
 print('docker-ce installed successfully' if status[0]==0 else 'failed to install docker-ce')
+if status[0]!=0 : exit()
 status = gso('yum install conntrack-tools -y')
 
 '''
@@ -59,6 +61,7 @@ status = gso('sudo install minikube-linux-amd64 /usr/local/bin/minikube')
 
 time()
 print('minikube-linux-amd64 successfully installed' if status[0] == 0 else 'failed to install')
+if status[0]!=0 : exit()
 
 '''
 the none driver allows advanced minikube users to skip VM creation, allowing minikube to be run on a user-supplied VM
@@ -69,6 +72,7 @@ status = gso('minikube start --driver=none --kubernetes-version=v1.20.0 --memory
 
 time()
 print('minikube started' if status[0]==0 else 'failed to start minikube')
+if status[0]!=0 : exit()
 
 '''
 kubectl installation
