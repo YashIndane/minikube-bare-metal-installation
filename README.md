@@ -20,6 +20,12 @@ On successfull run
 
 ![](images/v1.png)
 
+alternative way to run -
+
+```
+bash setupmini.sh
+```
+
 To check status after setup run this -
 ```
 minikube status
