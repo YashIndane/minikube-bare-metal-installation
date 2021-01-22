@@ -14,11 +14,12 @@ status = gso('systemctl stop firewalld')
 status = gso('setenforce 0')
 
 #configuring yum repos
+status = gso(f'touch {repo_name}')
+
 status = gso(f'echo "[path1]" >> {repo_name}')
 status = gso(f'echo "baseurl=https://download.docker.com/linux/centos/7/x86_64/stable/" >> {repo_name}')
 status = gso(f'echo "gpgcheck=0" >> {repo_name}')
 
-status = gso(f'touch {repo_name}')
 status = gso(f'echo "[path2]" >> {repo_name}')
 status = gso(f'echo "{baseurl_path}/AppStream" >> {repo_name}')
 status = gso(f'echo "gpgcheck=0" >> {repo_name}')
