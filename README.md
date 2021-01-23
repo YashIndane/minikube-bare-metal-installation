@@ -3,7 +3,7 @@
 ![](https://img.shields.io/badge/python-3.8-lightgrey)
 
 Script & ansible role to install minikube along with kubectl on a linux machine. This installs the setup on bare-metal, not on a seprate VM.
-This helps to install the kubectl controller and the minikube on the same machine.After installation it starts minikube.
+This helps to install the kubectl controller and the minikube on the same machine. After installation it starts minikube.
 
 # Using Python Script
 
