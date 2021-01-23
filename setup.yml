@@ -1,0 +1,6 @@
+- hosts: minikube_ip
+  roles:
+  - role: '/root/minirole'
+ 
+
+
