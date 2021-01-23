@@ -35,7 +35,7 @@ minikube status
 
 # Using Ansible role
 
-The `setup.yml` file can be saved in any location.
+The `setup.yml` file can be saved in any location, and mention the ip of target node in `ìnventory` file.
 
 Set the roles path by -
 
