@@ -33,6 +33,14 @@ To check status after setup run this -
 minikube status
 ```
 
+# Using playbook
+
+Run by -
+
+```
+ansible-playbook <path-of-mini.yml>
+```
+
 # Using Ansible role
 
 The `setup.yml` file can be saved in any location, and mention the ip of target node in `ìnventory` file.
