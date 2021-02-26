@@ -5,6 +5,8 @@
 Script & ansible role to install minikube along with kubectl on a linux machine. This installs the setup on bare-metal, not on a seprate VM.
 This helps to install the kubectl controller and the minikube on the same machine. After installation it starts minikube.
 
+Ansible-galaxy link -> !(link)[https://galaxy.ansible.com/yashindane/minirole]
+
 # Using Python Script
 
 In your linux terminal, to get the script
